@@ -18,7 +18,7 @@ const upload = multer(multerConfig);
 routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 
-// Daqui pra baixo precisa de autentica��o
+// Daqui pra baixo precisa de autenticação
 routes.use(authMiddleware);
 
 routes.put('/users', UserController.update);
